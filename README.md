@@ -1,7 +1,7 @@
 # OpenAI-API Playground 📕
 
 ## Achievements
-✅ Built a city activity reccomender.  
+✅ Built a city activity recommender.  
 
 ```python
 def city_activity(city):
