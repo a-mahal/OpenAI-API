@@ -1,6 +1,52 @@
 # OpenAI-API Playground 📕
 
 ## Achievements
+✅ Built a receipt analyzer which I plan on incorporating into a budgget tracker application.
+```python
+# Function to encode the image
+def encode_image(image_path):
+  with open(image_path, "rb") as image_file:
+    return base64.b64encode(image_file.read()).decode('utf-8')
+
+# Path to your image (jpg)
+image_path = "images/receipt_1.png"
+
+# Getting the base64 string
+base64_image = encode_image(image_path)
+
+response = client.chat.completions.create(
+  model="gpt-4o-mini",
+  messages=[
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "What are the items and price associated with them? Output each data point as a list [Item, Count, Total Price]",
+        },
+        {
+          "type": "image_url",
+          "image_url": {
+            "url":  f"data:image/jpeg;base64,{base64_image}"
+          },
+        },
+      ],
+    }
+  ],
+)
+
+print(response.choices[0].message.content)
+```
+### Output
+```
+Here are the items and their associated prices from the receipt:
+
+1. [Burger, 1, $10.00]
+2. [Salad, 1, $8.00]
+3. [Soft Drink, 2, $10.00]
+4. [Pie, 1, $10.00]
+5. [Tax, 1, $4.50]
+```
 ✅ Built a city activity recommender.  
 
 ```python
