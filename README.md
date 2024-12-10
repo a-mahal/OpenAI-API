@@ -2,7 +2,7 @@
 
 ## Achievements
 ✅ Built a city activity reccomender.  
-✅ Created a meal prep plan generator that takes in allergies and fitness goals.
+
 ```python
 def city_activity(city):
   zero_shot_prompt = """Output a list of four reccomendations, line by line.
@@ -42,13 +42,15 @@ Denver
 answer = city_activity(city)
 print(answer)
 ```
-
+### Output
 ```
 1. Visit the Red Rocks Amphitheatre for a concert or hike among the stunning rock formations.
 2. Explore the Denver Art Museum to see a diverse collection of art from around the world.
 3. Take a stroll through the historic Larimer Square for shopping, dining, and vibrant nightlife.
 4. Head to Denver Botanic Gardens to admire beautiful plant displays and peaceful gardens.
 ```
+✅ Created a meal prep plan generator that takes in allergies and fitness goals.  
+
 ## Purpose:
 #### This repsoitory is used as a playground to experiment with OpenAI's gpt-3.5-turbo API and learn about its abilities. 
 
