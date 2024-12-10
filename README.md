@@ -1,6 +1,6 @@
 # OpenAI-API Playground 📕
 
-## Achievements
+## Achievement #1
 ✅ Built a receipt analyzer which I plan on incorporating into a budgget tracker application.
 ```python
 # Function to encode the image
@@ -47,6 +47,7 @@ Here are the items and their associated prices from the receipt:
 4. [Pie, 1, $10.00]
 5. [Tax, 1, $4.50]
 ```
+## Achievement #2
 ✅ Built a city activity recommender.  
 
 ```python
@@ -95,6 +96,7 @@ print(answer)
 3. Take a stroll through the historic Larimer Square for shopping, dining, and vibrant nightlife.
 4. Head to Denver Botanic Gardens to admire beautiful plant displays and peaceful gardens.
 ```
+## Achievement #3
 ✅ Created a meal prep plan generator that takes in allergies and fitness goals.  
 ``` python
 def meal_plan(allergies, fitness_goal):
