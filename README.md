@@ -1,7 +1,7 @@
 # OpenAI-API Playground 📕
 
 ## Achievements
-✅ Built a city activity reccomender.
+✅ Built a city activity reccomender. \n
 ✅ Created a meal prep plan generator that takes in allergies and fitness goals.
 
 ## Purpose:
